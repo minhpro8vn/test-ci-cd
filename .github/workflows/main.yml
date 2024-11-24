@@ -14,7 +14,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           username: minhtranenouvo
-          password: ${{ dckr_pat_nn2g_EmGIlgsSJyj9f6mzLYwfI0 }}
+          password: dckr_pat_nn2g_EmGIlgsSJyj9f6mzLYwfI0
       -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -23,4 +23,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ${{ vars.DOCKERHUB_USERNAME }}/clockbox:latest
+          tags: minhtranenouvo/clockbox:latest
